@@ -7,3 +7,8 @@ It appears this deadlock occurs as a result of an `await`ed call, which can be s
 The `NoDeadlockOnSingleton` and `NoDeadlockOnTransient` tests are included as a demonstration that the DI deadlock bug only occurs on scoped services.
 
 A scope is created regardless of the test, because this more closely replicates the production environment (ASP.NET) in which there is always a scope created (HTTP request scope).
+
+---
+
+# RESOLVED - Known Bug - nofix
+https://learn.microsoft.com/en-us/dotnet/core/extensions/dependency-injection-guidelines#async-di-factories-can-cause-deadlocks
