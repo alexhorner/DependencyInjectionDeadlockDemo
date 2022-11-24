@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 
-namespace DeadlockDependencyInjection
+namespace DeadlockDependencyInjection.MainDemo
 {
     public class DeadlockDemoFactory
     {

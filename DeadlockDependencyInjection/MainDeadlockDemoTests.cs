@@ -1,8 +1,10 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using DeadlockDependencyInjection.MainDemo;
+using Microsoft.Extensions.DependencyInjection;
+using NUnit.Framework;
 
 namespace DeadlockDependencyInjection
 {
-    public class ReallyBasicDeadlockDemoTests
+    public class MainDeadlockDemoTests
     {
         private IDeadlockDemo? DeadlockDemoFactoryOperator(IServiceProvider provider)
         {
@@ -59,6 +61,7 @@ namespace DeadlockDependencyInjection
 
         [Test]
         [Order(2)]
+        [Timeout(10000)]
         public void DeadlockOnScoped()
         {
             IServiceCollection container = new ServiceCollection();

@@ -1,4 +1,4 @@
-﻿namespace DeadlockDependencyInjection
+﻿namespace DeadlockDependencyInjection.MainDemo
 {
     public class DeadlockDemoDependencyConcrete : IDeadlockDemoDependency
     {

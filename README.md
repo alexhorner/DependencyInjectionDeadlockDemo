@@ -12,3 +12,9 @@ A scope is created regardless of the test, because this more closely replicates 
 
 # RESOLVED - Known Bug - nofix
 https://learn.microsoft.com/en-us/dotnet/core/extensions/dependency-injection-guidelines#async-di-factories-can-cause-deadlocks
+
+---
+
+`CacheBasedDeadlockDemoTests` shows an ideal fix for this issue.
+
+`WorkaroundDeadlockDemoTests` shows a less than ideal workaround for this issue.
